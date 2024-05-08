@@ -1,6 +1,6 @@
 # xReadPinnedMessage
 
-**Simple Telegram Bot to reply based on ID pattern**
+**Simple Telegram Bot to listen and reply to messages with ID pattern**
 
 ## Step 1: Create a New Bot on Telegram
 
