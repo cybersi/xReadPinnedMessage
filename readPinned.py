@@ -25,15 +25,15 @@ async def check_address(update: Update, context: CallbackContext) -> None:
 
             # Reply with the image
             await context.bot.send_photo(
-                chat_id=message.chat_id,
-                #photo=image_file_id,  
-                photo=image_url,
-                reply_to_message_id=message.message_id,
-                #caption=f"Address recognized: {match.group()}"
+            chat_id=message.chat_id,
+            #photo=image_file_id,  
+            photo=image_url,
+            reply_to_message_id=message.message_id,
+            #caption=f"Address recognized: {match.group()}"
             )
-
+        
             # Reply with the text
-            #await context.bot.send_message(chat_id=message.chat_id, text=f"Address recognized: {match.group()}")
+            #await message.reply_text(f"Y U NO READ PINNED POST???")
 
 def main() -> None:
     application = Application.builder().token(TOKEN).build()
