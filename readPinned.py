@@ -32,8 +32,8 @@ async def check_address(update: Update, context: CallbackContext) -> None:
                 #caption=f"Address recognized: {match.group()}"
             )
 
-            #Reply with text
-            #await message.reply_text(f"Y U NO READ PINNED POST???")
+            # Reply with text
+            #await context.bot.send_message(chat_id=message.chat_id, text=f"Address recognized: {match.group()}")
 
 def main() -> None:
     application = Application.builder().token(TOKEN).build()
