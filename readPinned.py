@@ -32,7 +32,7 @@ async def check_address(update: Update, context: CallbackContext) -> None:
                 #caption=f"Address recognized: {match.group()}"
             )
 
-            # Reply with text
+            # Reply with the text
             #await context.bot.send_message(chat_id=message.chat_id, text=f"Address recognized: {match.group()}")
 
 def main() -> None:
